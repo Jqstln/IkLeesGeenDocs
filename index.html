@@ -54,14 +54,11 @@
     <footer class="navbar fixed-bottom shadow-0">
         <div class="container-fluid text">
             <span class="change">Turn on dark mode</span>
-            <span class="text-end">Copyright <span id="year">laden..</span> &copy; Alle rechten voorbehouden.</span>
+            <span class="text-end">Copyright 2022 &copy; Alle rechten voorbehouden.</span>
         </div>
     </footer>
 
     <script>
-        const d = new Date()
-        let year = d.getFullYear();
-        document.getElementById('year').innerHTML = year
 		$(".change").on("click", function() {
 			if( $("body").hasClass("dark-mode")) {
 				$("body").removeClass("dark-mode");
