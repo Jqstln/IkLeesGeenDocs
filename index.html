@@ -10,21 +10,23 @@
     <meta name="description" content="Lees jij nou geen docs? Begin je leven te beteren en volg ons ultiem stappenplan om documentatie's te lezen!">
     <meta name="keywords" content="documentatie, docs, lezen, stappenplan, beginnen, begin">
     <meta name="theme-color" content="#0d6efd">
-    <title>Lees De Docs</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon.png">
     <link rel="stylesheet" href="static/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+    <link rel="stylesheet" href="static/mdb.min.css">
+    <script src="static/mdb.min.js"></script>
+    <script src="static/jquery.js"></script>
+    <title>Lees De Docs</title>
 </head>
 
 <body>
-    <div class="text-center">
+    <div class="text-center text">
         <h1 id="title">Lees De Docs!</h1>
         <h1>&darr;</h1>
     </div>
-    <div class="explain text-center">
+    <div class="explain text-center text">
         <h2>Hoe lees jij nou documentatie?</h2>
         <br>
-        <div class="container">
+        <div class="container text">
             <p style="font-size:large;">
                 Als je vragen stelt die je snel kunt beantwoorden met de documentatie, zullen de reacties van mensen
                 afhangen van de sfeer van de plek waar je het stelt, het team waarmee je werkt of het online forum. De
@@ -42,10 +44,34 @@
         <div class="steps text-center">
             <div class="step1">
                 <h1>Stap 1:</h1>
-                <p>Zoek het op <a href="https://letmegooglethat.com/?q=docs">google.</a></p>
+                <p>Zoek het op <a href="https://letmegooglethat.com/?q=docs">google</a>.</p>
+
+                <h1>Stap 2:</h1>
+                <p>Typ de naam in van je libary/plugin/whatever <br>en zoek naar de documentatie daarvan, is altijd wel te vinden ;)</p>
             </div>
         </div>
     </div>
+    <nav class="navbar fixed-bottom shadow-0">
+        <div class="container-fluid text">
+            <span class="change">Turn on dark mode</span>
+            <span class="text-end">Copyright <span id="year">laden..</span> &copy; Alle rechten voorbehouden.</span>
+        </div>
+    </nav>
+
+    <script>
+        const d = new Date()
+        let year = d.getFullYear();
+        document.getElementById('year').innerHTML = year
+		$(".change").on("click", function() {
+			if( $("body").hasClass("dark-mode")) {
+				$("body").removeClass("dark-mode");
+				$(".change").text("Turn on dark mode");
+			} else {
+				$("body").addClass( "dark-mode");
+				$(".change").text( "Turn off dark mode");
+			}
+		});
+    </script>
 </body>
 
 </html>
