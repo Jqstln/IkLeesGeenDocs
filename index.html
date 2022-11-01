@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="static/style.css?v=1">
     <link rel="stylesheet" href="static/mdb.min.css">
     <script src="static/mdb.min.js"></script>
-    <script src="static/jquery.min.js"></script>
     <meta name="title" content="Lees de docs.">
     <meta name="description" content="Lees jij nou geen docs? Begin je leven te beteren en volg ons ultiem stappenplan om documentatie's te lezen!">
     <meta property="og:title" content="Lees de docs.">
@@ -57,21 +56,21 @@
     </div>
     <footer class="navbar fixed-bottom shadow-0">
         <div class="container-fluid text">
-            <span class="change">Turn on dark mode</span>
+            <span class="change" id="change">Turn on dark mode</span>
             <span class="text-end">Copyright 2022 &copy; Alle rechten voorbehouden.</span>
         </div>
     </footer>
 
     <script>
-		$(".change").on("click", function() {
-			if( $("body").hasClass("dark-mode")) {
-				$("body").removeClass("dark-mode");
-				$(".change").text("Turn on dark mode");
-			} else {
-				$("body").addClass( "dark-mode");
-				$(".change").text( "Turn off dark mode");
-			}
-		});
+        document.querySelector(".change").addEventListener("click", function () {
+            if (document.body.classList.contains("dark-mode")) {
+                document.body.classList.remove("dark-mode");
+                document.getElementById('change').textContent = 'Turn on dark mode';
+            } else {
+                document.body.classList.add("dark-mode");
+                document.getElementById('change').textContent = 'Turn off dark mode';
+            }
+        });
     </script>
 </body>
 
