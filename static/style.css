@@ -38,13 +38,12 @@ a {
 }
 
 .change {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .text {
     font-family: "Poppins", sans-serif;
 }
-
 
 #title {
     font-size: 5em;
