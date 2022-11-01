@@ -13,6 +13,15 @@ body {
     text-align: center;
 }
 
+.dark-mode {
+    background-color: rgb(22, 22, 22);
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    color: white;
+}
 
 h1 {
     font-size: 5em;
@@ -36,15 +45,6 @@ a {
     font-family: "Poppins", sans-serif;
 }
 
-.dark-mode {
-    background-color: rgb(22, 22, 22);
-    -webkit-transition: background 0.5s linear;
-    -moz-transition: background 0.5s linear;
-    -ms-transition: background 0.5s linear;
-    -o-transition: background 0.5s linear;
-    transition: background 0.5s linear;
-    color: white;
-}
 
 #title {
     font-size: 5em;
