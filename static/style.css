@@ -2,6 +2,11 @@
 
 body {
     background-color: #0d1117;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
     font-family: "Poppins", sans-serif;
     padding-top: 9vh;
     color: white;
@@ -33,6 +38,11 @@ a {
 
 .dark-mode {
     background-color: rgb(22, 22, 22);
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
     color: white;
 }
 
